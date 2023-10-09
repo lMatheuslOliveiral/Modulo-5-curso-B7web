@@ -1,16 +1,33 @@
 body {
-    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (max-width: 650px) {
-    body{
-        background-color: blueviolet;
+div{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+
+    margin: 20px 10px 20px 10px;
+
+   
+}
+
+@media (orientation: landscape) {
+    
+    body {
+        flex-direction: row;
         
     }
+
 }
 
-@media (max-width:500px) {
-    body{
-        background-color: azure;
+@media(orientation: portrait) {
+
+    body {
+        flex-direction: column;
+    
     }
+    
 }
